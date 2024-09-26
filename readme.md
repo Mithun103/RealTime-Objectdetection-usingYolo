@@ -113,10 +113,10 @@ def plot_one_box(xyxy, img, color=None, label=None, line_thickness=None):
         c2 = (xyxy[0] + t_size[0], xyxy[1])
         cv2.rectangle(img, c1, c2, color, -1)  # filled
         cv2.putText(img, label, (xyxy[0], xyxy[1] - 2), 0, 0.5, [255, 255, 255], thickness=tf, lineType=cv2.LINE_AA)
-```
+
 # Run the detection
 detect_real_time()
-
+```
 ## Output
 ![imagerec](https://github.com/user-attachments/assets/db2bcd69-1cfc-4fdd-afdb-ed357e966457)
 
